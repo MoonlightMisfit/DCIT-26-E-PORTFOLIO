@@ -1,0 +1,396 @@
+html{
+    scroll-behavior: smooth;
+    scroll-padding-top: 80px; 
+    padding-left: 10%;
+    padding-right: 10%;
+}
+Body{
+    background-image: 
+    url('purplesky.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    min-height: 100vh;
+    font-family: 'Roboto Slab';
+    padding-bottom: 100px;
+}
+.navbar {
+  background-color:#f5f1f16c;
+}
+
+.navbar .container{
+max-height:100px;
+}
+
+#portfolio{
+padding-top: 20px;
+letter-spacing: 3px;
+}
+
+.btn{
+  color:white;
+}
+
+@media (max-width: 425px) {
+  .navbar {
+    padding: 1rem 1.5rem;
+  }
+
+  .navbar-nav .nav-link {
+    margin-left: 0;
+    margin-top: 10px;
+  }
+  .btn{
+    background-color: rgb(0, 0, 0);
+    color:rgb(255, 255, 255);
+    font-weight:bold;
+  }
+}
+#home{
+  min-height: 100vh;
+}
+*{
+  box-sizing: border-box;
+}
+
+#Mainphoto {
+    transition: all 0.4s ease-in-out;
+    cursor: pointer;
+}
+
+/* Optional: Adds a slight zoom and brightness boost on hover */
+#Mainphoto:hover {
+    transform: scale(1.05);
+    filter: brightness(1.1);
+}
+
+#about {
+    background-color: #a2a3c5cc; 
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 10 10px 0px rgba(0, 0, 0, 0.1);
+}
+
+#hardskills {
+  text-align: center;
+  color: #ffffff;
+  text-shadow: 2px 2px #000000;
+}
+
+#softskills {
+  text-align: center;
+  color: #ffffff;
+  text-shadow: 2px 2px #000000;
+}
+.apps{
+background-color: white;
+
+}
+#apps {
+  max-width: 250px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.heart-btn {
+    background: none;
+    border: 2px solid #ff4d6d;
+    color: #ff4d6d;
+    padding: 5px 15px;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+/* Style for when it's "Liked" */
+.liked {
+    background-color: #ff4d6d;
+    color: white;
+    transform: scale(1.1);
+}
+
+.cards {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    max-width: 820px; 
+}
+
+.card--1 .card__img, .card--1 .card__img--hover {
+    background-image: url('Photographyfront.jpg');
+}
+
+.card--2 .card__img, .card--2 .card__img--hover {
+    background-image: url('artfront.jpg');
+}
+
+.card--3 .card__img, .card--3 .card__img--hover {
+    background-image: url('designfront.jpg');
+}
+
+.card__img {
+  visibility: hidden;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 235px;
+  border-top-left-radius: 12px;
+border-top-right-radius: 12px;
+  
+}
+
+.card__info-hover {
+    position: absolute;
+    padding: 16px;
+  width: 100%;
+  opacity: 0;
+  top: 0;
+}
+
+.card__img--hover {
+  transition: 0.2s all ease-out;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+  position: absolute;
+    height: 235px;
+  border-top-left-radius: 12px;
+border-top-right-radius: 12px;
+top: 0;
+  
+}
+.card {
+  margin-right: 0;
+  transition: all .4s cubic-bezier(0.175, 0.885, 0, 1);
+  background-color: #fff;
+  width: 21%;
+  position: relative;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0px 13px 10px -7px rgba(0, 0, 0,0.1);
+}
+@media (max-width: 768px) {
+    .card {
+        width: 100%;
+    }
+}
+
+.card:hover {
+  box-shadow: 0px 30px 18px -8px rgba(0, 0, 0,0.1);
+  transform: scale(1.10, 1.10);
+}
+
+.card__info {
+z-index: 2;
+  background-color: #fff;
+  border-bottom-left-radius: 12px;
+  border-bottom-right-radius: 12px;
+   padding: 16px 24px 24px 24px;
+}
+
+.card__category {
+    font-family: 'Raleway', sans-serif;
+    text-transform: uppercase;
+    font-size: 13px;
+    letter-spacing: 2px;
+    font-weight: 500;
+  color: #868686;
+}
+
+.card__title {
+    margin-top: 5px;
+    margin-bottom: 10px;
+    font-family: 'Roboto Slab', serif;
+}
+
+
+.card:hover .card__img--hover {
+    height: 100%;
+    opacity: 0.3;
+}
+
+.card:hover .card__info {
+    background-color: transparent;
+    position: relative;
+}
+
+.card:hover .card__info-hover {
+    opacity: 1;
+}
+.carousel-inner {
+  position: relative;
+  overflow: hidden;
+}
+
+.carousel-item {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  transition: transform 0.8s ease-in-out, opacity 0.8s ease-in-out;
+}
+
+
+.carousel-item.active {
+  position: relative;
+  opacity: 1;
+  transform: translateX(0);
+}
+
+
+.carousel-item-next,
+.carousel-item-start.carousel-item-next {
+  transform: translateX(0);
+  opacity: 1;
+}
+
+
+.carousel-item.active.carousel-item-start {
+  transform: translateX(-100%);
+  opacity: 0;
+}
+
+
+.carousel-item-prev,
+.carousel-item-start.carousel-item-prev {
+  transform: translateX(0);
+  opacity: 1;
+}
+
+.carousel-item.active.carousel-item-end {
+  transform: translateX(100%);
+  opacity: 0;
+}
+
+
+    .accordion-body {
+      display: flex;
+      justify-content: center;
+      gap: 15px;
+    }
+    .accordion-body img {
+      height: 200px;        
+      width: auto;          
+      object-fit: cover;    
+      border-radius: 8px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+      cursor: pointer;
+    }
+.collapsing {
+    transition: height 0.4s ease;
+}
+.reading-header:not(.collapsed) {
+  background-color: #c0b8ca; 
+  color: #fff;
+}
+
+.gaming-header:not(.collapsed) {
+  background-color: #c0b8ca; 
+  color: #fff;
+}
+
+.art-header:not(.collapsed) {
+  background-color: #c0b8ca; 
+  color: #fff;
+}
+
+.custom-accordion .accordion-body {
+  background: url('Accordionbg.jpg') no-repeat center center/cover;
+  color: white;
+}
+
+
+
+a {
+    text-decoration: none;
+    color: #fff;
+}
+p > a:hover{
+    color: #d9d9d9;
+    text-decoration:  underline;
+}
+
+
+.footer-social-icons {
+  display: flex;
+  justify-content: center; 
+  align-items: center;
+  margin: 0 auto;
+  width: 100%; 
+}
+
+ul.social-icons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap; 
+  gap: 15px; 
+  padding: 0;
+  list-style: none;
+  margin: 0;
+}
+
+.social-icons li {
+  display: inline-flex;
+}
+
+.social-icons a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 1.8rem; 
+}
+
+.fa-facebook {
+    padding:10px 14px;
+    -o-transition:.5s;
+    -ms-transition:.5s;
+    -moz-transition:.5s;
+    -webkit-transition:.5s;
+    transition: .5s;
+    background-color:rgba(255, 255, 255, 0.438);
+}
+.fa-facebook:hover {
+    background-color: #3d5b99;
+}
+.fa-youtube {
+    padding:10px 14px;
+    -o-transition:.5s;
+    -ms-transition:.5s;
+    -moz-transition:.5s;
+    -webkit-transition:.5s;
+    transition: .5s;
+    background-color:rgba(255, 255, 255, 0.397);
+}
+.fa-youtube:hover {
+    background-color: #e64a41;
+}
+.fa-instagram {
+    padding:10px 14px;
+    -o-transition:.5s;
+    -ms-transition:.5s;
+    -moz-transition:.5s;
+    -webkit-transition:.5s;
+    transition: .5s;
+    background-color: rgba(253, 252, 252, 0.432)
+}
+.fa-instagram:hover {
+    background-color: #c03bb9;
+}
+.fa-github {
+    padding:10px 14px;
+    -o-transition:.5s;
+    -ms-transition:.5s;
+    -moz-transition:.5s;
+    -webkit-transition:.5s;
+    transition: .5s;
+    background-color: rgba(253, 252, 252, 0.432)
+}
+.fa-github:hover {
+    background-color: #313131;
+}

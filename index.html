@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+<link href="https://fonts.googleapis.com/css?family=Raleway+Dots" rel="stylesheet" type="text/css">
+<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<!-- Nav -->
+<section>
+  <nav class="navbar navbar-expand-sm navbar-light fixed-top">
+    <div class="container">
+      <p class="navbar-brand text-white fw-bold" id="portfolio">E-Portfolio</p>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarID" aria-controls="navbarID" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-end" id="navbarID">
+        <div class="navbar-nav">
+          <a class="nav-link active text-white mx-3" href="#">Home</a>
+          <a class="nav-link active text-white mx-3" href="#about1">About</a>
+          <button type="button" class="btn mx-3" data-bs-toggle="modal" data-bs-target="#contactModal">Contact </button>
+        </div>
+      </div>
+    </div>
+  </nav>
+</section>
+<!-- Intro -->
+<section>
+  <div class="intro-section d-flex justify-content-center align-items-center" id="home">
+    <img id="Mainphoto"
+        src="Hover_image1.png" 
+        alt="Picture A" 
+        style="max-width: 100%; height: auto;"
+        >
+  </div>
+</section>
+
+<!-- about me -->
+<p id="about1"> </p>
+<section>
+  <div class="container my-5">
+    <div class="row justify-content-center align-items-center">
+      <div class="col-md-8 text-start" id="about">
+        <h2>About Me</h2>
+          <p class="lead">
+          Im Lyza Nicole Baldoza, a 19 years old artist and IT student from the Philippines aspiring to be a successful graphic designer in my field. 
+          <br>
+          As an amateur artist, I enjoy creating both digital and traditional artwork. My main interests lie in graphic design and character design.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Skills -->
+
+<section class="my-5">
+  <div class="container text-center">
+    <div class="row justify-content-center">
+
+      <!-- Hard Skills -->
+      <div class="col-md-5" id="hardskills">
+        <h1>Hard Skills</h1>
+        <ul class="list-unstyled">
+          <li>Illustration</li>
+          <li>Photography</li>
+          <li>Programming</li>
+          <li>Photo and Video Editing</li>
+          <li>Graphic Design</li>
+        </ul>
+      </div>
+
+      <!-- Soft Skills -->
+      <div class="col-md-5" id="softskills">
+        <h1>Soft Skills</h1>
+        <ul class="list-unstyled">
+          <li>Creativity</li>
+          <li>Time Management</li>
+          <li>Communication</li>
+          <li>Problem-Solving</li>
+          <li>Teamwork</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Knowledgeable in -->
+
+<section class="apps my-5 text-center">
+  <div class="container">
+    <h2><strong>Knowledgeable in:</strong></h2>
+    <img src="apps.jpg" alt="Apps" class="img-fluid" id="apps" data-bs-toggle="tooltip" title="(Excel,Word,Adobe Photoshop,Canva,IbixPaintX,Capcut)">
+  </div>
+</section>
+
+<!-- Projects -->
+
+<section>
+  <div class="container text-center my-5">
+    <h1 class="fw-bold text-white">Projects</h1>
+    <br>
+    <div class="row justify-content-center">
+
+  <!-- Photography -->
+<div class="col-12 d-flex justify-content-center">
+  <div class="cards align-items-center justify-content-center">
+    <div class="card card--1">
+      <div class="card__info-hover"></div>
+    <div class="card__img"></div>
+       <a href="#" class="card_link" data-bs-toggle="modal" data-bs-target="#carouselModal1">
+        <div class="card__img--hover"></div>
+      </a>
+    <div class="card__info">
+      <span class="card__category"> Projects</span>
+        <h5 class="card__title">Photography</h5>
+         <button id="likeBtn1" class="heart-btn">♡ Like</button>
+    </div>
+  </div>
+
+  
+  <!-- Art -->
+
+    <div class="card card--2">
+      <div class="card__info-hover">
+      </div>
+ 
+    <div class="card__img"></div>
+    <a href="#" class="card_link" data-bs-toggle="modal" data-bs-target="#carouselModal2">
+      <div class="card__img--hover"></div>
+    </a>
+    <div class="card__info">
+    <span class="card__category"> Projects</span>
+    <h5 class="card__title">Illustrations</h5>
+    <button id="likeBtn2" class="heart-btn">♡ Like</button>
+    </div>
+  </div>
+
+
+<!--Digital designs -->
+    <div class="card card--3">
+      <div class="card__info-hover"></div>
+
+    <div class="card__img"></div>
+       <a href="#" class="card_link" data-bs-toggle="modal" data-bs-target="#carouselModal3">
+        <div class="card__img--hover"></div>
+      </a>
+    <div class="card__info">
+      <span class="card__category"> Projects</span>
+        <h5 class="card__title">Designs</h5>
+         <button id="likeBtn3" class="heart-btn">♡ Like</button>
+    </div>
+  </div>
+</div>
+</div>
+</section>
+
+<!-- Carousel -->
+
+ <section>
+<div class="modal fade" id="carouselModal1" tabindex="-1" aria-hidden="true">
+  <div class="modal-dialog ">
+    <div class="modal-content">
+      <div class="modal-body">
+        <div id="carousel1" class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="Photography/Photography1.jpg" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+              <img src="Photography/Photography2.jpg" class="d-block w-100" alt="...">
+            </div>
+              <div class="carousel-item">
+              <img src="Photography/Photography4.jpg" class="d-block w-100" alt="...">
+            </div>
+              <div class="carousel-item">
+              <img src="Photography/Photography5.jpg" class="d-block w-100" alt="...">
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carousel1" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carousel1" data-bs-slide="next">
+            <span class="carousel-control-next-icon"></span>
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="carouselModal2" tabindex="-1" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-body">
+        <div id="carousel2" class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="Art/art1.jpg" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+              <img src="Art/art2.jpg" class="d-block w-100" alt="...">
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carousel2" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carousel2" data-bs-slide="next">
+            <span class="carousel-control-next-icon"></span>
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="carouselModal3" tabindex="-1" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-body">
+        <div id="carousel3" class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+               <video id="projectVideo" class="w-100" controls>
+          <source src="Designs/Designvideo1.mp4" type="video/mp4">
+        </video>
+            </div>
+            <div class="carousel-item">
+              <img src="Designs/Design2.jpg" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+              <img src="Designs/Design3.jpg" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+              <img src="Designs/Design4.jpg" class="d-block w-100" alt="...">
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carousel3" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carousel3" data-bs-slide="next">
+            <span class="carousel-control-next-icon"></span>
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</section>
+
+<!-- accordion-->
+<section> 
+  <h1 class="fw-bold text-white text-center">Hobbies</h1>
+  <br>
+  <div class="accordion accordion-flush custom-accordion" id="accordionFlushExample">
+
+    <!-- Reading -->
+    <div class="accordion-item">
+      <h2 class="accordion-header" id="flush-headingOne">
+        <button class="accordion-button collapsed reading-header" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+          Reading
+        </button>
+      </h2>
+      <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+        <div class="accordion-body">
+          <img src="Reading/HeroKiller.jpg" alt="Hero Killer" class="img-fluid w-25" data-bs-toggle="tooltip" title="Hero Killer">
+          <img src="Reading/HandJumper.jpg" alt="Hand Jumper" class="img-fluid w-50" data-bs-toggle="tooltip" title="Hand Jumper">
+          <img src="Reading/OurGuild'sIdol.jpg" alt="Our Guild's Idol" class="img-fluid w-25" data-bs-toggle="tooltip" title="Our Guild's Idol">
+        </div>
+      </div>
+    </div>
+
+    <!-- Gaming -->
+    <div class="accordion-item">
+      <h2 class="accordion-header" id="flush-headingTwo">
+        <button class="accordion-button collapsed gaming-header" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+          Gaming
+        </button>
+      </h2>
+      <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+        <div class="accordion-body">
+          <img src="Gaming/Valo.jpg" alt="Valorant" class="img-fluid w-25" data-bs-toggle="tooltip" title="Valorant">
+          <img src="Gaming/minecraft.jpg" alt="Minecraft" class="img-fluid w-50" data-bs-toggle="tooltip" title="Minecraft">
+          <img src="Gaming/Codm.jpg" alt="Codm" class="img-fluid w-25" data-bs-toggle="tooltip" title="Call of Duty Mobile">
+        </div>
+      </div>
+    </div>
+
+    <!-- Digital Art -->
+    <div class="accordion-item">
+      <h2 class="accordion-header" id="flush-headingThree">
+        <button class="accordion-button collapsed art-header" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+          Digital Art
+        </button>
+      </h2>
+      <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+        <div class="accordion-body">
+          <img src="Digital Art/doodle1.jpg" class="img-fluid w-25" data-bs-toggle="tooltip" title="Doodle of moi~">
+          <img src="Digital Art/doodle2.jpg" class="img-fluid w-50" data-bs-toggle="tooltip" title="Roblox avatar doodle">
+          <img src="Digital Art/doodle3.jpg" class="img-fluid w-25" data-bs-toggle="tooltip" title="Crying mini doodle :P">
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Contact Modal -->
+ <section>
+  <div class="modal fade" id="contactModal" tabindex="-1" aria-labelledby="contactModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      
+      <!-- Modal Header -->
+      <div class="modal-body">
+  <!-- 1. Added ID and 'novalidate' to let JS handle the look -->
+  <form id="contactForm" class="needs-validation" novalidate>
+    <div class="mb-3">
+      <label for="name" class="form-label">Name</label>
+      <input type="text" class="form-control" id="name" required>
+      <div class="invalid-feedback">Please enter your name.</div>
+    </div>
+    
+    <div class="mb-3">
+      <label for="email" class="form-label">Email address</label>
+      <input type="email" class="form-control" id="email" required>
+      <div class="invalid-feedback">Please enter a valid email.</div>
+    </div>
+
+    <div class="mb-3">
+      <label for="message" class="form-label">Message</label>
+      <textarea class="form-control" id="message" rows="3" required></textarea>
+      <div class="invalid-feedback">Please leave a message.</div>
+    </div>
+
+    <!-- 2. Footer is now INSIDE the form so 'submit' works -->
+    <div class="modal-footer border-0"> 
+      <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+      <button type="submit" class="btn btn-dark">Send Message</button>
+    </div>
+  </form>
+</div>
+</section>
+
+<!--social-->
+<section>
+  
+  <div class="container text-center my-5 align-items-center justify-content-center">
+    <h3 class=" text-white"> Socials</h3>
+  <div class="footer-social-icons ">
+    <ul class="social-icons align-items-center justify-content-center">
+        <li><a href="https://www.facebook.com/BaldozaLyza" class="social-icon" data-bs-toggle="tooltip" title="@BaldozaLyza"> <i class="fa fa-facebook"></i></a></li>
+        <li><a href="https://www.youtube.com/channel/UCGJE8fFZJc0F2OQ5mfgV2OQ" class="social-icon" data-bs-toggle="tooltip" title="@MoonlightMisfit"> <i class="fa fa-youtube"></i></a></li>
+        <li><a href="https://www.instagram.com/moonlightmisfit_/#" class="social-icon" data-bs-toggle="tooltip" title="@moonlightmisfit_"> <i class="fa fa-instagram"></i></a></li>
+        <li><a href="https://github.com/MoonlightMisfit" class="social-icon" data-bs-toggle="tooltip" title="@MoonlightMisfit"> <i class="fa fa-github"></i></a></li>
+    </ul>
+</div>
+  </div>
+</section>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
