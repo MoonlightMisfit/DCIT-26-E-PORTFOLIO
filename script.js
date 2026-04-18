@@ -3,12 +3,12 @@ const img = document.getElementById('Mainphoto');
 
 // Change to the illustrated version on hover
 img.addEventListener('mouseover', () => {
-    img.src = 'hover_image2.png'; 
+    img.src = 'Hover_image2.png'; 
 });
 
 // Change back to the original when the mouse leaves
 img.addEventListener('mouseout', () => {
-    img.src = 'hover_image1.png';
+    img.src = 'Hover_image1.png';
 });
 
 const contactForm = document.getElementById('contactForm');
