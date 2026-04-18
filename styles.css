@@ -35,7 +35,6 @@ letter-spacing: 3px;
 @media (max-width: 425px) {
   .navbar {
     padding: 1rem 1.5rem;
-    background-color: #2a1b3d !important; 
   }
 
   .navbar-nav .nav-link {
